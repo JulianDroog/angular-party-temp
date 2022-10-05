@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## deploy to firebase
+
+You can deploy now or later. To deploy now, open a terminal window, then navigate to or create a root directory for your web app.
+
+Sign in to Google
+
+```firebase login```
+
+Initiate your project
+
+Run this command from your app’s root directory:
+
+```firebase init```
+
+When you’re ready, deploy your web app
+Put your static files (e.g., HTML, CSS, JS) in your app’s deploy directory (the default is “public”). Then, run this command from your app’s root directory:
+
+```firebase deploy```
