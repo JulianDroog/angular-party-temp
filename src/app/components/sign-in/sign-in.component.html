@@ -1,0 +1,13 @@
+
+                      <div class="card text-center">
+                        <div class="card-body">
+                                          <h2>Login</h2>
+                                          <form (ngSubmit)="onSubmit()" #studentForm="ngForm" name="registerform">
+                                          <p>Email:
+                                          <input type="text" class="form-control" [(ngModel)]="model.email" name="email" required/></p>
+                                          <p>Password:
+                                          <input type="password" class="form-control" [(ngModel)]="model.password" name="password" required/></p>
+                                          <button type="submit" class="btn btn-primary" [disabled]="!studentForm.form.valid || submitted">Submit</button>
+                                          </form>
+                        </div>
+                      </div>

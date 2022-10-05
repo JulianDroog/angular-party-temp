@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg">
+  <span class="navbar-brand mx-auto h1">Battle der gehuchten</span>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-7">
+      <h2 class="text-center">Grafiek</h2>
+      <div class="chart">
+        <canvas
+          baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [colors]="pieChartColors"
+          [legend]="pieChartLegend"
+        >
+        </canvas>
+      </div>
+    </div>
+    <div class="col-sm">
+      <h2 class="text-center">Top 10</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Gehucht</th>
+            <th scope="col">Aantal pintjes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of townships | slice: 0:9">
+            <td>{{ t.name }}</td>
+            <td>{{ t.amount }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row cards">
+    <div class="col-md">
+      <div class="card">
+        <div class="card-body">
+          {{ result }} <br />
+          Totaal aantal pintjes gedronken
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card black">
+        <div class="card-body">
+          {{ townships[0].name }} <br />
+          Gehucht aan de leiding
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <div class="card-body">
+          {{ perUur | number: "1.0-0" }} <br />
+          Pinten per uur gedronken
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />

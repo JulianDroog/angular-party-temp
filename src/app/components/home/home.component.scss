@@ -1,0 +1,46 @@
+.container-fluid {
+    margin-top: 30px;
+}
+.navbar {
+    background-color: #292b2c;
+    color: white;
+}
+
+.table {
+    background-color: #292b2c;
+    color: white;
+    height: 50%;
+}
+
+
+.cards {
+    margin-top: 100px;
+    .card {
+        background-color: #E5E500;
+        color: white;
+        border-color: #E5E500;
+        margin: 10px;
+    }
+    .black{
+        background-color: #292b2c;
+        border-color: #292b2c;
+    }
+
+}
+
+
+
+
+@media (max-width: 880px) {
+    .card {
+        margin-top: 0px;
+    }
+  
+}
+
+// @media (max-width: 834px) {
+//     .card {
+//         width: 100%;
+//         margin: 20px;
+//     }
+// }

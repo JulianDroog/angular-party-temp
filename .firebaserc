@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "battle-der-gehuchten",
+    "staging": "battle-der-gehuchten"
+  }
+}
